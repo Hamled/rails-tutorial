@@ -1,0 +1,4 @@
+# Ensure the database is migrated before testing
+database:
+  post:
+    - bundle exec rake db:migrate

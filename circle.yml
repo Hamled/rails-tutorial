@@ -1,0 +1,11 @@
+# Ensure the database is migrated before testing
+database:
+  post:
+    - bundle exec rake db:migrate
+
+# Continuous deployment to Heroku
+deployment:
+    chapter-3:
+      branch: chapter-3
+      heroku:
+        appname: safe-garden-9960

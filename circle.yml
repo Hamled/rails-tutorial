@@ -7,5 +7,6 @@ database:
 deployment:
     chapter-3:
       branch: chapter-3
-      heroku:
-        appname: safe-garden-9960
+      commands:
+        - git push git@heroku.com:safe-garden-9960.git $CIRCLE_SHA1:refs/heads/master
+        - heroku run rake db:migrate --app safe-garden-9960

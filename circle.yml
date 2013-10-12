@@ -10,3 +10,8 @@ deployment:
       commands:
         - git push git@heroku.com:safe-garden-9960.git $CIRCLE_SHA1:refs/heads/master
         - heroku run rake db:migrate --app safe-garden-9960
+    chapter-4:
+      branch: chapter-4
+      commands:
+        - git push git@heroku.com:warm-woodland-6206.git $CIRCLE_SHA1:refs/heads/master
+        - heroku run rake db:migrate --app warm-woodland-6206

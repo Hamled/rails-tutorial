@@ -15,3 +15,8 @@ deployment:
       commands:
         - git push git@heroku.com:warm-woodland-6206.git $CIRCLE_SHA1:refs/heads/master
         - heroku run rake db:migrate --app warm-woodland-6206
+    chapter-5:
+      branch: chapter-5
+      commands:
+        - git push git@heroku.com:ancient-cliffs-9324.git $CIRCLE_SHA1:refs/heads/master
+        - heroku run rake db:migrate --app ancient-cliffs-9324

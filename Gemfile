@@ -6,15 +6,16 @@ gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
-  gem 'rspec-rails', '~> 2.14.0'
-  gem 'guard', '~> 2.0.0'
-  gem 'guard-rspec', '~> 4.0.0'
+  gem 'rspec-rails', '~> 2.13.0'
+  gem 'guard', '~> 1.8'
+  gem 'guard-rspec', '~> 3.1.0'
+  gem 'zeus', '~> 0.13.3'
+  gem 'ruby_gntp', '~> 0.3.4'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
-  gem 'growl', '1.0.3'
 end
 
 gem 'sass-rails', '4.0.0'

@@ -9,6 +9,7 @@ gem 'coffee-rails', '4.0.0'
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
+gem 'pg', '0.15.1'
 
 group :development do
   gem 'guard', '~> 1.8'
@@ -23,13 +24,8 @@ group :test do
   gem 'rspec-rails', '~> 2.13.0'
 end
 
-group :development, :test do
-  gem 'sqlite3', '1.3.7'
-end
-
 group :production do
   gem 'thin', '1.5.1'
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 

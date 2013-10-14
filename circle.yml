@@ -20,3 +20,8 @@ deployment:
       commands:
         - git push git@heroku.com:ancient-cliffs-9324.git $CIRCLE_SHA1:refs/heads/master
         - heroku run rake db:migrate --app ancient-cliffs-9324
+    chapter-6:
+      branch: chapter-6
+      commands:
+        - git push git@heroku.com:vast-refuge-3271.git $CIRCLE_SHA1:refs/heads/master
+        - heroku run rake db:migrate --app vast-refuge-3271

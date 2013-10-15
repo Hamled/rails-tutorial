@@ -26,6 +26,6 @@ module RailsTutorial
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
-    config.active_record.schema_format :sql
+    config.active_record.schema_format = :sql
   end
 end

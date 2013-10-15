@@ -10,6 +10,7 @@ gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'pg', '0.15.1'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development do
   gem 'guard', '~> 1.8'
